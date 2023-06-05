@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    overflow: scroll;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(background.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    background: #cc33ff;
+    text-align: center;
+}
+.navbar ul{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+.navbar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.active, .navbar ul li:hover {
+    background: #710694;
+}
+.sub-menu-1{
+    display: none;
+}
+.navbar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: #5b0279;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.navbar ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+.navbar ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    text-align: left;
+}
+.navbar ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+.navbar ul li:hover .sub-menu-1 ul li a{
+    color: blue;
+}
